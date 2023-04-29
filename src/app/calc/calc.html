@@ -1,0 +1,57 @@
+<body>
+    <div class="calc-super">
+        <div class="calc">
+            
+            <header>
+                <div>
+                    <h1>
+                        Calculadora
+                    </h1>
+                </div>
+            </header>
+
+            <div class="tela">
+                <p id="tela"></p>
+            </div>
+            
+            <div class="numbers-calc">
+                <div class="numbers">
+                    <div class="equal-calc">
+                        <div class="sla">
+                            <div>
+                                <button (click)="inserir('1')">1</button>
+                                <button (click)="inserir('2')">2</button>
+                                <button (click)="inserir('3')">3</button>
+                            </div>
+                            <div class="sla">
+                                <button class="zero" (click)="inserir('0')">0</button>
+                            </div>
+                        </div>
+                        <button class="equal" (click)="resultado()">=</button>
+                    </div>
+                    
+                    <div>
+                        <button (click)="inserir('4')">4</button>
+                        <button (click)="inserir('5')">5</button>
+                        <button (click)="inserir('6')">6</button>
+                        <button (click)="inserir('+')">+</button>
+                        
+                    </div>  
+                    
+                    <div>
+                        <button (click)="inserir('7')">7</button>
+                        <button (click)="inserir('8')">8</button>
+                        <button (click)="inserir('9')">9</button>
+                        <button (click)="inserir('*')">*</button>
+                    </div>
+                    <div>
+                        <button (click)="inserir('-')">-</button>
+                        <button (click)="inserir('/')">/</button>
+                        <button (click)="delete()">⬅</button>
+                        <button (click)="limpar()" class="C">C</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
